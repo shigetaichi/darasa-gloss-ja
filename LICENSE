@@ -1,0 +1,13 @@
+Copyright (c) 2026 shigetaichi
+
+このリポジトリの内容は GNU General Public License version 2 の下で
+提供される。
+
+理由: 各 TSV の左端の id 列は calima-msa-r13（CAMeL Lab、GPL v2）の
+レンマ・語根・型の識別子であり、全体としてそのデータベースの派生物に
+あたるためである。日本語訳そのものは本リポジトリの著者の著作物だが、
+id と切り離しては用をなさないので、まとめて GPL v2 とする。
+
+darasa-morph 本体（MIT）とは別のリポジトリにしてあるのはこのためである。
+
+GPL v2 の全文: https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt

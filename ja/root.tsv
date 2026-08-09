@@ -1,0 +1,11 @@
+# root.tsv — 語根の中核義。3,344 件が母集団。
+#
+# 列: id \t ja \t source \t confidence \t reviewed_at
+# source は manual / dict / mt のいずれか。**必須**。
+# 機械翻訳と人手を混ぜたあと区別できなくなるのを防ぐための列である。
+#
+# **id 昇順に並べること。** darasa-morph の検証器が強制する。
+#   (grep '^#' root.tsv; grep -v '^#' root.tsv | LC_ALL=C sort) > t && mv t root.tsv
+#
+# 検証:
+#   cd ../darasa-morph && make build-kb
