@@ -3,24 +3,24 @@
 [darasa-morph](https://github.com/shigetaichi/darasa-morph) 用の日本語訳。
 レンマ・語根・型の3種類を持つ。
 
-**ライセンスは GPL v2**（`LICENSE` 参照）。本体は MIT だが、こちらは
-id が calima 由来なので分けてある。
+**ライセンスは GPL v2。** 全文は [`LICENSE`](LICENSE)、理由と著作権の系譜は
+[`NOTICE`](NOTICE) にある。解析器本体は MIT だが、こちらは id が calima 由来なので
+配布物として分けてある。
 
 ## 使い方
 
 darasa-morph の隣に clone すると、既定の探索パスで拾われる。
 
 ```sh
-git clone git@github.com:shigetaichi/darasa-gloss-ja.git ../darasa-gloss-ja
+git clone https://github.com/shigetaichi/darasa-gloss-ja.git ../darasa-gloss-ja
 cd ../darasa-morph
 make build-kb      # 検証と充足率
-make serve
 ```
 
 別の場所に置いたときは `GLOSS` で指す。
 
 ```sh
-make serve GLOSS="gloss/ja /path/to/darasa-gloss-ja/ja"
+make build-kb GLOSS="gloss/ja /path/to/darasa-gloss-ja/ja"
 ```
 
 ## 訳を足す

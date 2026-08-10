@@ -1,0 +1,60 @@
+darasa-gloss-ja
+===============
+
+Copyright (c) 2026 shigetaichi
+
+アラビア語のレンマ・語根・型に対する日本語訳。
+
+
+なぜ GPL v2 なのか
+------------------
+
+各 TSV の左端の id 列は calima-msa-r13（CAMeL Lab、GPL v2）のレンマ・語根・型の
+識別子であり、全体としてそのデータベースの派生物にあたる。
+
+日本語訳そのものは本リポジトリの著者の著作物だが、id と切り離しては用をなさない。
+まとめて **GPL v2** とする。全文は LICENSE にある。
+
+calima-msa-r13 は GPL v2 の "or later" ではなく **version 2 のみ**で配布されている。
+したがって GPLv3 や CC BY-SA 4.0 との混在はできない。
+
+解析器本体（darasa-morph）が MIT で、こちらが別リポジトリになっているのは
+このためである。あちらには calima の識別子を並べたファイルを置いていない。
+
+
+著作権の系譜
+------------
+
+calima-msa-r13 — GPL v2
+
+    CAMeL Lab (New York University Abu Dhabi)
+      ← Aramorph 1.2.1 / Linguistic Data Consortium
+          3600 Market Street, Suite 810, Philadelphia, PA 19104-2653, USA
+      ← Portions (c) 2002 QAMUS LLC (www.qamus.org)
+      ← Portions (c) 2002 Trustees of the University of Pennsylvania
+      ← Portions (c) 2006 Jon Dehdari
+
+calima-msa-r13 に同梱の LICENSE は次のように述べている。
+
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License
+    as published by the Free Software Foundation version 2.
+
+形態素データベース本体は本リポジトリには含まれていない。
+
+
+含まれていないもの
+------------------
+
+**CAMeL Arabic Frequency Lists（CC BY-SA 4.0）は本リポジトリの内容の
+派生元に含まれていない。**
+
+`ja/lemma.tsv` の行の並び順は訳を作った順であって、頻度順ではない。
+頻度の数値も順位も書き出していない。
+
+
+関連リポジトリ
+--------------
+
+    https://github.com/shigetaichi/darasa-morph          解析器（MIT）
+    https://github.com/shigetaichi/darasa-vocab-cards    語彙カード（GPL v2）
